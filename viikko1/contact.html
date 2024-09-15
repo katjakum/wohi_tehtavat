@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container2">
+
+      <div class="header-menu">
+        <h1>Contact me</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="cv.html">Cv</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-padding">
+        <form class="contact-form" action="#" method="post">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="1" max="120" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <label for="discovery">How did you know about my page?</label>
+          <div class="checkbox-group">
+            <div class="item">
+              <label for="google">Google:</label>
+              <input type="checkbox" id="google" name="google" />
+            </div>
+            <div class="item">
+              <label for="linked">LinkedIn:</label>
+              <input type="checkbox" id="linked" name="linked" />
+            </div>
+            <div class="item">
+              <label for="friend">From a friend:</label>
+              <input type="checkbox" id="friend" name="friend" />
+            </div>
+            <div class="item">
+              <label for="other">Other:</label>
+              <input type="checkbox" id="other" name="other" />
+            </div>
+          </div>
+
+          <button class="button" type="submit">Submit</button>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
